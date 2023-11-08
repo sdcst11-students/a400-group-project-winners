@@ -5,6 +5,8 @@
 #hello john wazzup!!!!!!!!!!!!!!
 #hello john wazzup!!!!!!!!!!!!!!
 
+#penis cunt
+
 def title():
     # Will display a title screen
     # input parameters: none needed
