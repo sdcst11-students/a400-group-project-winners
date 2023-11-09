@@ -1,11 +1,13 @@
 #!python3
 #Team Winners
 import math
-
-
+import os
 
 def title():
-   
+    input("""""")
+    
+    Basmath()
+        
     return None
 
 def instructions():
@@ -85,11 +87,9 @@ def main():
     You will need to include a while loop to keep repeating the commands until
     the user chooses to exit
     """
-    title()
-    while True:
-        input("placehold")
-        Basmath()
-        pass
+
+
+    
 
 def Basmath():
 
@@ -127,8 +127,11 @@ def Basmath():
                             try:
                                 Div1 = float(input('input a number: '))
                                 Div2 = float(input("input a second number: "))
-                                print(Div1 / Div2)
-                                break
+                                if Div2 == 0:
+                                    print("Division by zero is not allowed.")
+                                else:
+                                    print(Div1 / Div2)
+                                    break
                             except:
                                 print("")
                     elif inp1 == "Mul" or inp1 == "mul":
@@ -185,9 +188,10 @@ def Basmath():
                 except:
                     print("Error, try again")
                 inpex = input("Would you like to do another math? (Yes/No): ")
-                if inpex.lower() == "yes":
+                if inpex == "yes" or inpex == "Yes" :
                     pass
                 else:
+                    os.system('cls')
                     title()
         except:
             print("wrong input")
