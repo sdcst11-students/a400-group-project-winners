@@ -1,8 +1,30 @@
 #!python3
 #Team Winners
 import math
+"<<<<<<< HEAD"
+import os
+
+def title():
+    input("""""")
+    
+    Basmath()
+        
+    return None
+
+def instructions():
+    # Will display instructions
+    # input parameters: none needed
+    # output parameters: None
+    # Author:
+    # Modified:
+    return None
+
+#made by Yurii Fadieiev
+
+
 
 """"
+>>>>>>> 79b30ec445ad6ef76118ce576a5545fc6d4a1661
 #Volume of a sphere
 #Surface area of a sphere
 #Factorial
@@ -78,9 +100,10 @@ def findCompoundInterest():
             t = float(input("Years: "))
 
             print(f"The interest is: {round(p * (1 + (r / 100) / n)**(n * t), 2)}")
-            break
         except Exception as e:
             print("Error. Bad input.")
+
+##############################
 
 #the following is by John
 def Basmath():
@@ -119,8 +142,11 @@ def Basmath():
                             try:
                                 Div1 = float(input('input a number: '))
                                 Div2 = float(input("input a second number: "))
-                                print(Div1 / Div2)
-                                break
+                                if Div2 == 0:
+                                    print("Division by zero is not allowed.")
+                                else:
+                                    print(Div1 / Div2)
+                                    break
                             except:
                                 print("")
                     elif inp1 == "Mul" or inp1 == "mul":
@@ -177,9 +203,10 @@ def Basmath():
                 except:
                     print("Error, try again")
                 inpex = input("Would you like to do another math? (Yes/No): ")
-                if inpex.lower() == "yes":
+                if inpex == "yes" or inpex == "Yes" :
                     pass
                 else:
+                    os.system('cls')
                     title()
         except:
             print("wrong input")
@@ -225,13 +252,7 @@ def main():
     the user chooses to exit
     """
     title()
-
-    #test of Yurii's programs
-    findCompoundInterest()
-    findFactorial()
-    findFibonacciSequence()
-    findSphereSurfaceArea()
-    findSphereVolume()
+   
     while True:
         # keep giving options to choose menu options until they choose to exit
         pass
