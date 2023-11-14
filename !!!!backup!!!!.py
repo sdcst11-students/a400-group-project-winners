@@ -5,11 +5,70 @@
 #hello john wazzup!!!!!!!!!!!!!!
 #hello john wazzup!!!!!!!!!!!!!!
 
-
-
+from assignment import Basmath
+import math
+import os
 def title():
-   
+    os.system('cls')
+    input("""                                              __      __       .__                                                                            
+  ______   ______   ______   ______   ______ /  \    /  \ ____ |  |   ____  ____   _____   ____    ______   ______   ______   ______   ______ 
+ /_____/  /_____/  /_____/  /_____/  /_____/ \   \/\/   // __ \|  | _/ ___\/  _ \ /     \_/ __ \  /_____/  /_____/  /_____/  /_____/  /_____/ 
+ /_____/  /_____/  /_____/  /_____/  /_____/  \        /\  ___/|  |_\  \__(  <_> )  Y Y  \  ___/  /_____/  /_____/  /_____/  /_____/  /_____/ 
+                                               \__/\  /  \___  >____/\___  >____/|__|_|  /\___  >                                             
+                                                    \/       \/          \/            \/     \/                                              
+                                                                                                                                             
+ \nChoose:\nBasmath(+-*/)\nexponents\nSquare root\n
+                                                                                                                                            """)
+    inptit = input("Enter: ")
+    while True:
+        try:
+            if inptit == "Basmath":
+                Basmath()
+            elif inptit == "exponents":
+                Expo()
+            elif inptit == "Square root":
+                Sqrt()
+            """elif inptit == add your function
+
+            elif inptit == add your function
+
+            elif inptit == add your function
+
+            elif inptit == add your function"""
+
+            
+        
+            
+        except:
+            print("")
+
+
+
+
+
     return None
+
+
+def Sqrt():
+    sq1 = float.input("Number1: ")
+    
+    
+    
+    print(math.sqrt(sq1))
+
+
+    return
+def Expo():
+    exp1 = float.input("Number1: ")
+    exp2 = float.input("Number2: ")
+
+    print(exp1**exp2)
+
+
+
+
+
+    return()
 
 def instructions():
     # Will display instructions
@@ -28,10 +87,8 @@ def main():
     the user chooses to exit
     """
     title()
-    while True:
-        input("placehold")
-        Basmath()
-        pass
+    
+    return None
 
 def Basmath():
 
@@ -127,9 +184,12 @@ def Basmath():
                 except:
                     print("Error, try again")
                 inpex = input("Would you like to do another math? (Yes/No): ")
-                if inpex.lower() == "yes":
+                if inpex == "yes" or inpex == "Yes":
                     pass
+                elif inpex == "no" or inpex == "No":
+                    return(title())
                 else:
+
                     title()
         except:
             print("wrong input")
@@ -153,7 +213,7 @@ def Basmath():
 
 
 
-title()
+main()
 
 
 
