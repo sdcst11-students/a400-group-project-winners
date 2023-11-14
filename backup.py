@@ -1,14 +1,14 @@
 #!python3
-#Team Winners
-import math
-"<<<<<<< HEAD"
-import os
+# Volume Calculator
+# Feel free to rename your variables
+#hello john wazzup!!!!!!!!!!!!!!
+#hello john wazzup!!!!!!!!!!!!!!
+#hello john wazzup!!!!!!!!!!!!!!
+
+
 
 def title():
-    input("""""")
-    
-    Basmath()
-        
+   
     return None
 
 def instructions():
@@ -19,93 +19,20 @@ def instructions():
     # Modified:
     return None
 
-#made by Yurii Fadieiev
 
 
-
-""""
->>>>>>> 79b30ec445ad6ef76118ce576a5545fc6d4a1661
-#Volume of a sphere
-#Surface area of a sphere
-#Factorial
-#Find fibonacci number
-#Interest calculations
-"""
-#made by Yurii Fadieiev
-
-def findSphereVolume():
-    while True: 
-        try: 
-            r = float(input("Radius of the sphere: "))
-            print(f"The volume of the sphere is: {round(4.0/3.0 * math.pi * r**3, 2)}") 
-            break
-        except Exception as e:
-            print("Error. Bad input.")
-
-
-def findSphereSurfaceArea():
+def main():
+    """
+    main block of code that will run your program and control program flow
+    You will need to include a while loop to keep repeating the commands until
+    the user chooses to exit
+    """
+    title()
     while True:
-        try:
-            r = float(input("Radius of the sphere: "))
-            print(f"The surface area of the sphere is: {round(4 * math.pi * r**2, 2)}")
-            break
-        except Exception as e:
-            print("Error. Bad input.")
+        input("placehold")
+        Basmath()
+        pass
 
-def findFactorial():
-    while True:
-        try:
-            n = int(input("Number to find the factorial of: "))
-            f = 1
-            for i in range(1, n+1):
-                f = f * i
-            print(f"The factorial is: {f}")
-            break
-        except Exception as e:
-            print("Error. Bad input.")
-
-#print(', '.join(map(str, findFibonacciSequence()))) to be used for the below
-def findFibonacciSequence():
-    while True:
-        try:
-            n = int(input("Enter the number to find the fibonacci sequence of: "))
-
-            out = []
-
-            a = 0
-            b = 1
-            sum = a + b
-
-            #count = 1
-
-            while (a <= n):
-            	out.append(a)
-
-            	a = b
-            	b = sum
-            	sum = a + b
-
-            print(f"The fibonacci sequence is: {', '.join(map(str, out))}")
-            break
-        except Exception as e:
-            print("Error. Bad input.")
-
-#P(1 + r/n)nt
-def findCompoundInterest():
-    while True:
-        try:
-            p = float(input("Principal: "))
-            r = float(input("Rate: "))
-            n = float(input("Compound periods per year: "))
-            t = float(input("Years: "))
-
-            print(f"The interest is: {round(p * (1 + (r / 100) / n)**(n * t), 2)}")
-        except Exception as e:
-            print("Error. Bad input.")
-
-##############################
-
-#the following is by John
 def Basmath():
 
     
@@ -142,11 +69,8 @@ def Basmath():
                             try:
                                 Div1 = float(input('input a number: '))
                                 Div2 = float(input("input a second number: "))
-                                if Div2 == 0:
-                                    print("Division by zero is not allowed.")
-                                else:
-                                    print(Div1 / Div2)
-                                    break
+                                print(Div1 / Div2)
+                                break
                             except:
                                 print("")
                     elif inp1 == "Mul" or inp1 == "mul":
@@ -203,10 +127,9 @@ def Basmath():
                 except:
                     print("Error, try again")
                 inpex = input("Would you like to do another math? (Yes/No): ")
-                if inpex == "yes" or inpex == "Yes" :
+                if inpex.lower() == "yes":
                     pass
                 else:
-                    os.system('cls')
                     title()
         except:
             print("wrong input")
@@ -230,32 +153,15 @@ def Basmath():
 
 
 
+title()
 
 
 
 
-def title():
-    return None
 
-def instructions():
-    # Will display instructions
-    # input parameters: none needed
-    # output parameters: None
-    # Author:
-    # Modified:
-    return None
 
-def main():
-    """
-    main block of code that will run your program and control program flow
-    You will need to include a while loop to keep repeating the commands until
-    the user chooses to exit
-    """
-    title()
-   
-    while True:
-        # keep giving options to choose menu options until they choose to exit
-        pass
+
+
 
 if __name__ == "__main__":
     main()
