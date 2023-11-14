@@ -1,6 +1,7 @@
 #!python3
 #Team Winners
 import math
+"<<<<<<< HEAD"
 import os
 
 def title():
@@ -20,11 +21,17 @@ def instructions():
 
 #made by Yurii Fadieiev
 
+
+
+""""
+>>>>>>> 79b30ec445ad6ef76118ce576a5545fc6d4a1661
 #Volume of a sphere
 #Surface area of a sphere
 #Factorial
 #Find fibonacci number
 #Interest calculations
+"""
+#made by Yurii Fadieiev
 
 def findSphereVolume():
     try: 
@@ -215,16 +222,31 @@ def Basmath():
 
 
 
-title()
 
 
 
 
+def title():
+    return None
 
+def instructions():
+    # Will display instructions
+    # input parameters: none needed
+    # output parameters: None
+    # Author:
+    # Modified:
+    return None
 
-
-
+def main():
+    """
+    main block of code that will run your program and control program flow
+    You will need to include a while loop to keep repeating the commands until
+    the user chooses to exit
+    """
+    title()
+    while True:
+        # keep giving options to choose menu options until they choose to exit
+        pass
 
 if __name__ == "__main__":
-    print(findCompoundInterest())
-    #main()
+    main()
