@@ -47,4 +47,4 @@ def Sin(d,y,Q):
     return answer
 
 # cos = y/x
-print(Sin(60,24,True))
+print(Tan(60,24,True))
