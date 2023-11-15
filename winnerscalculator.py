@@ -142,7 +142,7 @@ def Cos():
             y = float(input("Y: "))
             a = math.cos(d*math.pi/180)
 
-            x = str(input("if Q is True y is numerator if Q is False y is denominator (t/f): "))
+            x = str(input("Hypothenuse or angle (t/f): "))
             if x == 't':
                 Q = True
             elif x == 'f':
@@ -167,7 +167,7 @@ def Tan():
             y = float(input("Y: "))
             a = math.tan(d*math.pi/180)
 
-            x = str(input("if Q is True y is numerator if Q is False y is denominator (t/f): "))
+            x = str(input("Hypothenuse or angle (t/f): "))
             if x == 't':
                 Q = True
             elif x == 'f':
@@ -192,7 +192,7 @@ def Sin():
             y = float(input("Y: "))
             a = math.cos(d*math.pi/180)
 
-            x = str(input("if Q is True y is numerator if Q is False y is denominator (t/f): "))
+            x = str(input("Hypothenuse or angle (t/f): "))
             if x == 't':
                 Q = True
             elif x == 'f':
@@ -371,7 +371,7 @@ def main():
             Tan()
         elif i == 'sin':
             Sin()
-        elif i == 'bs':
+        elif i == 'bm':
             Basmath()
         elif i == 'sq':
             Sqrt()
