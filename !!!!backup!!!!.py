@@ -4,7 +4,7 @@
 #hello john wazzup!!!!!!!!!!!!!!
 #hello john wazzup!!!!!!!!!!!!!!
 #hello john wazzup!!!!!!!!!!!!!!
-
+#skibidi toilet only in ohio sigma gyatt kai cenat rizzler
 from assignment import Basmath
 import math
 import os
@@ -50,7 +50,7 @@ def title():
 
 
 def Sqrt():
-    sq1 = float.input("Number1: ")
+    sq1 = float(input("Number1: "))
     
     
     
@@ -59,8 +59,8 @@ def Sqrt():
 
     return
 def Expo():
-    exp1 = float.input("Number1: ")
-    exp2 = float.input("Number2: ")
+    exp1 = float(input("Number1: "))
+    exp2 = float(input("Number2: "))
 
     print(exp1**exp2)
 
@@ -214,6 +214,8 @@ def Basmath():
 
 
 main()
+
+
 
 
 

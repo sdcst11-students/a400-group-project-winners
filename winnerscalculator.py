@@ -4,7 +4,7 @@ Made by: Yurii, John, Tyler (Team Winners)
 """
 
 import math
-
+import os
 
 #the following are by Yurii:
 def findSphereVolume():
@@ -332,6 +332,7 @@ def Expo():
 
 #the main functions and loops
 def main():
+    os.system('cls')
     print("""                                             
          ______   ______   ______   ______   ______ /  \    /  \ ____ |  |     ____  ____   _____   ____    ______   ______   ______   ______   ______ 
         /_____/  /_____/  /_____/  /_____/  /_____/ \   \/\/   // __ \|  |   _/ ___\/  _ \ /     \_/ __ \  /_____/  /_____/  /_____/  /_____/  /_____/ 
